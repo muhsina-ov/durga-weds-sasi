@@ -44,6 +44,7 @@
 
   <!-- Critical Asset Preloading for Instant Render & Scrapers -->
   <link rel="preload" href="./og-image.jpg" as="image" type="image/jpeg" fetchpriority="high">
+  <link rel="preload" href="./assets/couple.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="preload" href="./assets/doors/1.avif" as="image" type="image/avif" fetchpriority="high">
   <link rel="preload" href="./assets/doors/1.mp4" as="video" type="video/mp4">
   <link rel="preload" href="./assets/bgm.mp3" as="audio" type="audio/mp3">
@@ -161,8 +162,18 @@
             TOGETHER WITH THEIR FAMILIES
           </p>
 
+          <!-- Royal Arched Couple Portrait -->
+          <div class="couple-portrait-wrapper animate-element" style="--delay: 0.28s;">
+            <div class="couple-portrait-frame">
+              <img src="/assets/couple.webp" alt="Durga &amp; Sasi" class="couple-portrait-img" width="195" height="275" fetchpriority="high">
+              <div class="portrait-halo"></div>
+              <span class="portrait-sparkle s-top">✦</span>
+              <span class="portrait-sparkle s-bottom">✦</span>
+            </div>
+          </div>
+
           <!-- Couple Names: Durga & Sasi -->
-          <div class="couple-names-block animate-element" style="--delay: 0.35s;">
+          <div class="couple-names-block animate-element" style="--delay: 0.38s;">
             <h1 class="groom-name" id="displayBride">Durga</h1>
             <div class="ampersand-wrapper">
               <span class="ampersand">&amp;</span>
