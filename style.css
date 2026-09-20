@@ -2,6 +2,8 @@
    PREMIUM CINEMATIC DIGITAL WEDDING INVITATION - STYLES
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
   --color-gold-light: #FFF4D0;
   --color-gold: #E5C158;
@@ -657,13 +659,12 @@ html, body {
 .groom-name, .bride-name {
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
-  background: var(--color-gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.8));
-  letter-spacing: 2px;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9), 0 0 24px rgba(255, 255, 255, 0.35);
+  letter-spacing: 2.5px;
 }
 
 .ampersand-wrapper {
@@ -673,19 +674,23 @@ html, body {
 .ampersand {
   font-family: var(--font-heading);
   font-size: 1.6rem;
-  color: var(--color-gold);
+  color: #ffffff;
+  font-weight: 700;
   font-style: italic;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 14px rgba(255, 255, 255, 0.3);
 }
 
 .invitation-tagline {
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   letter-spacing: 2px;
   line-height: 1.6;
-  color: var(--color-text-muted);
+  color: #ffffff;
+  font-weight: 500;
   max-width: 320px;
   margin-bottom: 20px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
 }
 
 .gold-separator {
@@ -914,7 +919,8 @@ html, body {
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--color-gold);
-  width: 58px;
+  width: 66px;
+  min-width: 66px;
   flex-shrink: 0;
   letter-spacing: 1px;
   padding-top: 2px;
@@ -1021,20 +1027,68 @@ html, body {
   line-height: 1.4;
 }
 
-/* Dress Code Badge */
-.dress-code-badge {
+/* Dress Code & RSVP Badge */
+.dress-code-badge,
+.rsvp-badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
   background: rgba(229, 193, 88, 0.12);
-  border: 1px solid rgba(229, 193, 88, 0.3);
-  padding: 6px 16px;
-  border-radius: 20px;
+  border: 1px solid rgba(229, 193, 88, 0.35);
+  padding: 8px 18px;
+  border-radius: 22px;
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  letter-spacing: 1px;
+  font-size: 0.78rem;
+  letter-spacing: 0.8px;
   color: var(--color-gold-light);
   margin-bottom: 26px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.rsvp-label {
+  font-weight: 700;
+  color: var(--color-gold);
+  letter-spacing: 1.2px;
+}
+
+.rsvp-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(229, 193, 88, 0.25);
+  transition: all 0.25s ease;
+}
+
+.rsvp-link:hover {
+  background: rgba(229, 193, 88, 0.25);
+  border-color: var(--color-gold);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(229, 193, 88, 0.3);
+}
+
+.rsvp-name {
+  font-weight: 600;
+  color: var(--color-gold-light);
+}
+
+.rsvp-number {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rsvp-divider {
+  color: var(--color-gold);
+  opacity: 0.7;
+  font-size: 0.7rem;
 }
 
 /* Action Buttons Grid */

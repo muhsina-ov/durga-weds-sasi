@@ -334,8 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cdMins = document.getElementById('cdMins');
   const cdSecs = document.getElementById('cdSecs');
   
-  // Wedding Date: 30th January 2027 (Singapore UTC+8)
-  const targetWeddingDate = new Date('2027-01-30T17:00:00+08:00').getTime();
+  // Wedding Date: 30th January 2027, 5:30 PM (Singapore UTC+8)
+  const targetWeddingDate = new Date('2027-01-30T17:30:00+08:00').getTime();
 
   function updateCountdown() {
     if (!cdDays || !cdHours || !cdMins || !cdSecs) return;
@@ -571,12 +571,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const venue = 'De Hall Ballroom';
       const location = '3 Irving Rd #02-08, Tai Seng Centre, Singapore 369522';
 
-      const title = encodeURIComponent(`Wedding Celebration of ${bride} & ${groom}`);
-      const details = encodeURIComponent(`You are cordially invited to celebrate the wedding of ${bride} and ${groom} at ${venue}, Singapore.`);
+      const title = encodeURIComponent(`Wedding Celebration of Sasi & Durga`);
+      const details = encodeURIComponent(`You are joyfully invited to celebrate the wedding of Sasi and Durga at ${venue}, Singapore.`);
       const loc = encodeURIComponent(`${venue}, ${location}`);
 
-      // 30th January 2027 (Singapore UTC+8 -> 17:00 SGT = 09:00 UTC)
-      const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${loc}&dates=20270130T090000Z/20270130T160000Z`;
+      // 30th January 2027 (Singapore UTC+8 -> 17:30 SGT = 09:30 UTC)
+      const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${loc}&dates=20270130T093000Z/20270130T160000Z`;
 
       window.open(googleCalendarUrl, '_blank', 'noopener,noreferrer');
     });
