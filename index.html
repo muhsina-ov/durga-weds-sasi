@@ -5,38 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Durga &amp; Sasi — Wedding Invitation | 30th January 2027</title>
   
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://durga-weds-sasi.pages.dev/">
+
   <!-- Primary SEO Meta Tags -->
-  <meta name="title" content="Durga &amp; Sasi — Wedding Invitation | 30th January 2027">
-  <meta name="description" content="You are cordially invited to celebrate the wedding of Durga & Sasi on Saturday, 30th January 2027 at De Hall Ballroom, Singapore.">
-  <meta name="keywords" content="Durga and Sasi, wedding invitation, digital wedding card, De Hall Ballroom, Singapore wedding">
+  <meta name="title" content="Durga &amp; Sasi — Wedding Invitation | Saturday, 30th January 2027">
+  <meta name="description" content="Together with their families, Durga &amp; Sasi cordially invite you to celebrate their wedding on Saturday, 30th January 2027 at De Hall Ballroom, Singapore. Tap to open the invitation.">
+  <meta name="keywords" content="Durga and Sasi, Durga weds Sasi, wedding invitation, digital wedding card, De Hall Ballroom, Singapore wedding, royal wedding invitation">
   <meta name="author" content="Durga &amp; Sasi">
   <meta name="theme-color" content="#0a0a0f">
 
-  <!-- Open Graph / Facebook / WhatsApp -->
+  <!-- Schema.org / Google / WhatsApp Fallbacks -->
+  <meta itemprop="name" content="Durga &amp; Sasi — Wedding Invitation">
+  <meta itemprop="description" content="Together with their families, Durga &amp; Sasi cordially invite you to celebrate their wedding on Saturday, 30th January 2027 at De Hall Ballroom, Singapore.">
+  <meta itemprop="image" content="https://durga-weds-sasi.pages.dev/og-image.jpg">
+  <link rel="image_src" href="https://durga-weds-sasi.pages.dev/og-image.jpg">
+
+  <!-- Open Graph / Facebook / WhatsApp / iMessage / Telegram -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Durga &amp; Sasi — Wedding Invitation | 30th January 2027">
-  <meta property="og:description" content="You are cordially invited to celebrate the wedding of Durga & Sasi on Saturday, 30th January 2027 at De Hall Ballroom, Singapore.">
-  <meta property="og:image" content="/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
-  <meta property="og:image:alt" content="Durga &amp; Sasi Wedding Invitation">
   <meta property="og:site_name" content="Durga &amp; Sasi Wedding">
+  <meta property="og:url" content="https://durga-weds-sasi.pages.dev/">
+  <meta property="og:title" content="Durga &amp; Sasi — Wedding Invitation | Saturday, 30th January 2027">
+  <meta property="og:description" content="Together with their families, Durga &amp; Sasi cordially invite you to celebrate their wedding on Saturday, 30th January 2027 at De Hall Ballroom, Singapore. Tap to open the invitation.">
+  <meta property="og:image" content="https://durga-weds-sasi.pages.dev/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://durga-weds-sasi.pages.dev/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Wedding Invitation of Durga &amp; Sasi — 30th January 2027">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Durga &amp; Sasi — Wedding Invitation | 30th January 2027">
-  <meta name="twitter:description" content="You are cordially invited to celebrate the wedding of Durga & Sasi on Saturday, 30th January 2027 at De Hall Ballroom, Singapore.">
-  <meta name="twitter:image" content="/og-image.jpg">
+  <meta name="twitter:url" content="https://durga-weds-sasi.pages.dev/">
+  <meta name="twitter:title" content="Durga &amp; Sasi — Wedding Invitation | Saturday, 30th January 2027">
+  <meta name="twitter:description" content="Together with their families, Durga &amp; Sasi cordially invite you to celebrate their wedding on Saturday, 30th January 2027 at De Hall Ballroom, Singapore.">
+  <meta name="twitter:image" content="https://durga-weds-sasi.pages.dev/og-image.jpg">
+  <meta name="twitter:image:alt" content="Wedding Invitation of Durga &amp; Sasi — 30th January 2027">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Critical Asset Preloading for Instant Render -->
+  <!-- Critical Asset Preloading for Instant Render & Scrapers -->
+  <link rel="preload" href="./og-image.jpg" as="image" type="image/jpeg" fetchpriority="high">
   <link rel="preload" href="./assets/doors/1.avif" as="image" type="image/avif" fetchpriority="high">
   <link rel="preload" href="./assets/doors/1.mp4" as="video" type="video/mp4">
   <link rel="preload" href="./assets/bgm.mp3" as="audio" type="audio/mp3">
+
+  <script>
+    (function() {
+      if (typeof window !== 'undefined' && window.location && window.location.origin) {
+        const origin = window.location.origin;
+        if (!origin.includes('localhost') && !origin.includes('127.0.0.1')) {
+          const ogUrl = document.querySelector('meta[property="og:url"]');
+          const twUrl = document.querySelector('meta[name="twitter:url"]');
+          const canonical = document.querySelector('link[rel="canonical"]');
+          const ogImg = document.querySelector('meta[property="og:image"]');
+          const ogImgSec = document.querySelector('meta[property="og:image:secure_url"]');
+          const twImg = document.querySelector('meta[name="twitter:image"]');
+          const itemImg = document.querySelector('meta[itemprop="image"]');
+          const linkImg = document.querySelector('link[rel="image_src"]');
+          if (ogUrl) ogUrl.setAttribute('content', origin + '/');
+          if (twUrl) twUrl.setAttribute('content', origin + '/');
+          if (canonical) canonical.setAttribute('href', origin + '/');
+          if (ogImg) ogImg.setAttribute('content', origin + '/og-image.jpg');
+          if (ogImgSec) ogImgSec.setAttribute('content', origin + '/og-image.jpg');
+          if (twImg) twImg.setAttribute('content', origin + '/og-image.jpg');
+          if (itemImg) itemImg.setAttribute('content', origin + '/og-image.jpg');
+          if (linkImg) linkImg.setAttribute('href', origin + '/og-image.jpg');
+        }
+      }
+    })();
+  </script>
 
   <link rel="stylesheet" href="./style.css">
 </head>
